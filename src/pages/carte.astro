@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+
+const title = "Notre Carte";
+const description = "Découvrez notre carte gastronomique célébrant le terroir bordelais et aquitain, accompagnée d\'une sélection exceptionnelle de vins régionaux par notre sommelier expert.";
+const keywords = ["carte gastronomique bordeaux", "terroir bordelais", "restaurant produits locaux", "vins bordeaux", "cuisine aquitaine", "sommelier bordeaux", "gastronomie r\u00e9gionale", "sp\u00e9cialit\u00e9s bordelaises"];
+---
+
+<BaseLayout {title} {description} {keywords}>
+  <Hero
+    title="Une Carte d\'Exception Célébrant le Terroir Bordelais"
+    subtitle="Découvrez notre sélection gastronomique où chaque plat raconte l\'histoire de l\'Aquitaine, sublimée par des vins d\'exception choisis par notre sommelier expert."
+  />
+
+  <!-- Content sections -->
+  <div class="content-wrapper">
+    <section class="content-section">
+      <h2>L&#39;Art de Sublimer les Produits du Terroir</h2>
+      <p>Notre carte gastronomique puise son inspiration dans la richesse exceptionnelle du terroir bordelais et aquitain. Chaque plat est conçu comme un hommage aux producteurs locaux qui perpétuent les traditions culinaires de notre région. Des huîtres d&#39;Arcachon aux agneau de Pauillac, en passant par les champignons des Landes, notre chef compose des créations authentiques où la qualité des produits s&#39;exprime pleinement. Cette approche respectueuse du terroir nous permet de vous offrir une expérience culinaire unique, ancrée dans l&#39;identité gastronomique bordelaise.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Nos Menus de Saison</h2>
+      <p>Fidèles à notre philosophie du produit frais et de saison, nos menus évoluent au rythme des récoltes et des arrivages. Le menu dégustation &#39;Terroir&#39; met à l&#39;honneur les spécialités régionales revisitées avec créativité et modernité. Notre formule &#39;Tradition&#39; propose des plats emblématiques de la cuisine bordelaise, tandis que notre carte &#39;Découverte&#39; invite les gastronomes curieux à explorer des associations inédites entre produits locaux et techniques culinaires contemporaines. Chaque menu est pensé pour créer une harmonie parfaite entre saveurs, textures et présentation.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Une Cave d&#39;Exception Sélectionnée par Notre Sommelier</h2>
+      <p>Notre sommelier parcourt les vignobles bordelais pour dénicher les plus belles cuvées qui accompagneront votre repas. Notre carte des vins privilégie les appellations locales : Saint-Émilion, Pomerol, Médoc, Pessac-Léognan, mais aussi les vins de l&#39;Entre-Deux-Mers et du Sauternais. Chaque bouteille est choisie pour sa capacité à magnifier nos plats, créant des accords mets-vins d&#39;une rare justesse. Des grands crus classés aux vignerons indépendants, notre cave reflète la diversité et l&#39;excellence du patrimoine viticole aquitain.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Nos Spécialités Signature</h2>
+      <p>Parmi nos créations emblématiques, découvrez notre &#39;Lamproie à la Bordelaise&#39; revisitée, où tradition et modernité se rencontrent dans un équilibre parfait. Notre &#39;Cannelé salé aux cèpes des Landes&#39; transforme la pâtisserie bordelaise en amuse-bouche raffiné. Le &#39;Magret de canard du Périgord, sauce aux pruneaux d&#39;Agen&#39; illustre notre maîtrise des produits du Sud-Ouest. Ces plats signature incarnent notre vision de la gastronomie bordelaise : respectueuse des traditions, innovante dans l&#39;exécution, et toujours soucieuse de mettre en valeur l&#39;excellence de nos terroirs.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Expérience Personnalisée et Conseil Expert</h2>
+      <p>Notre équipe s&#39;attache à personnaliser chaque repas selon vos goûts et préférences. Notre sommelier vous guide dans le choix des vins, expliquant l&#39;histoire de chaque domaine et les particularités de chaque millésime. Nos serveurs, formés à l&#39;art de la table bordelaise, vous accompagnent dans la découverte de notre carte en partageant anecdotes et secrets de préparation. Cette approche sur-mesure fait de chaque visite une expérience unique, où l&#39;authenticité du terroir se conjugue avec l&#39;art de recevoir à la française.</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .content-section {
+    padding: 4rem 0;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary, #2563eb);
+  }
+
+  .content-section p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--color-text, #1f2937);
+    margin-bottom: 1rem;
+  }
+
+  .content-section:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+</style>

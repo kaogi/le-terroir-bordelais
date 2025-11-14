@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+
+const title = "Accueil";
+const description = "Restaurant gastronomique Le Terroir Bordelais à Bordeaux. Cuisine française authentique, produits du terroir, accords mets-vins régionaux dans un cadre élégant. Réservez.";
+const keywords = ["restaurant gastronomique Bordeaux", "cuisine fran\u00e7aise", "terroir bordelais", "vins de Bordeaux", "restaurant Bordeaux", "gastronomie fran\u00e7aise", "produits locaux", "accord mets vins"];
+---
+
+<BaseLayout {title} {description} {keywords}>
+  <Hero
+    title="L\'Excellence du Terroir Bordelais dans Votre Assiette"
+    subtitle="Découvrez une cuisine gastronomique française authentique où les saveurs du terroir se marient à l\'élégance bordelaise, accompagnées des plus grands crus de notre région."
+  />
+
+  <!-- Content sections -->
+  <div class="content-wrapper">
+    <section class="content-section">
+      <h2>Une Cuisine Gastronomique Enracinée dans la Tradition</h2>
+      <p>Au cœur de Bordeaux, Le Terroir Bordelais célèbre l&#39;authenticité des produits locaux à travers une cuisine gastronomique raffinée. Notre chef puise son inspiration dans les richesses du terroir aquitain pour créer des plats d&#39;exception qui révèlent toute la noblesse des saveurs régionales. Chaque assiette raconte l&#39;histoire de notre patrimoine culinaire, sublimée par un savoir-faire contemporain.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>L&#39;Art de l&#39;Accord Mets et Vins Bordelais</h2>
+      <p>Notre carte des vins met à l&#39;honneur les plus beaux crus de Bordeaux et de sa région. Des grands crus classés aux pépites méconnues, notre sommelier vous guide dans la découverte d&#39;accords parfaits entre nos créations culinaires et les trésors viticoles locaux. Vivez une expérience œnogastronomique unique où chaque dégustation devient un voyage sensoriel au cœur du vignoble bordelais.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Un Cadre d&#39;Exception pour Vos Moments Précieux</h2>
+      <p>Dans un décor alliant élégance contemporaine et charme traditionnel, notre restaurant vous accueille pour des moments d&#39;exception. Notre salle principale baignée de lumière naturelle et notre salon privé offrent le cadre idéal pour vos déjeuners d&#39;affaires, dîners romantiques ou célébrations familiales. Chaque détail a été pensé pour créer une atmosphère chaleureuse et raffinée.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Des Produits d&#39;Exception Sélectionnés avec Passion</h2>
+      <p>Notre engagement envers l&#39;excellence nous pousse à collaborer étroitement avec les meilleurs producteurs locaux. Légumes de saison cultivés en Gironde, viandes d&#39;élevages respectueux, poissons de nos côtes atlantiques, fromages affinés par nos maîtres fromagers partenaires : chaque ingrédient est choisi pour sa qualité exceptionnelle et son respect de l&#39;environnement.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Réservez Votre Table pour Une Expérience Inoubliable</h2>
+      <p>Laissez-vous transporter par l&#39;art de vivre à la française dans notre restaurant gastronomique. Notre équipe passionnée vous attend pour partager avec vous sa vision de la haute cuisine bordelaise. Réservez dès maintenant votre table et préparez-vous à vivre une expérience culinaire authentique où tradition et créativité se rencontrent pour le plus grand plaisir de vos sens.</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .content-section {
+    padding: 4rem 0;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary, #2563eb);
+  }
+
+  .content-section p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--color-text, #1f2937);
+    margin-bottom: 1rem;
+  }
+
+  .content-section:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+</style>

@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+
+const title = "Contact & Réservations";
+const description = "Réservez votre table au Terroir Bordelais, restaurant gastronomique au cœur de Bordeaux. Contact, horaires et réservation en ligne pour une expérience culinaire authentique.";
+const keywords = ["r\u00e9servation restaurant Bordeaux", "contact Terroir Bordelais", "restaurant gastronomique Bordeaux", "r\u00e9server table Bordeaux", "cuisine terroir bordelais", "restaurant centre Bordeaux", "\u00e9v\u00e9nements priv\u00e9s restaurant", "gastronomie bordelaise"];
+---
+
+<BaseLayout {title} {description} {keywords}>
+  <Hero
+    title="Réservez Votre Table d\'Exception"
+    subtitle="Contactez-nous pour vivre une expérience gastronomique authentique au cœur de Bordeaux. Notre équipe vous accueille avec passion dans l\'élégance du terroir bordelais."
+  />
+
+  <!-- Content sections -->
+  <div class="content-wrapper">
+    <section class="content-section">
+      <h2>Réservation de Table</h2>
+      <p>Plongez dans l&#39;art culinaire bordelais en réservant votre table au Terroir Bordelais. Que ce soit pour un dîner romantique, un repas d&#39;affaires ou une célébration entre amis, notre équipe s&#39;engage à vous offrir une expérience gastronomique mémorable. Nous recommandons fortement la réservation, particulièrement en soirée et le week-end, pour garantir votre place dans notre restaurant d&#39;exception. Contactez-nous par téléphone au 05 56 XX XX XX ou utilisez notre formulaire en ligne pour une réponse rapide.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Informations Pratiques</h2>
+      <p>Le Terroir Bordelais vous accueille du mardi au samedi de 12h00 à 14h30 et de 19h30 à 22h30. Fermé le dimanche et le lundi. Situé au cœur du centre historique de Bordeaux, notre restaurant est facilement accessible en tramway (arrêt Hôtel de Ville) et dispose de parkings à proximité. Nous acceptons les principales cartes de crédit et proposons des menus adaptés aux régimes alimentaires spécifiques sur demande préalable.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Événements Privés et Groupes</h2>
+      <p>Organisez vos événements exceptionnels dans le cadre raffiné du Terroir Bordelais. Notre équipe experte conçoit des menus sur mesure pour vos réceptions privées, dîners d&#39;entreprise, anniversaires ou célébrations spéciales. Avec une capacité d&#39;accueil modulable, nous nous adaptons à vos besoins pour créer des moments inoubliables autour de la gastronomie bordelaise authentique. Contactez notre responsable événementiel pour étudier votre projet personnalisé.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Notre Équipe à Votre Service</h2>
+      <p>L&#39;équipe du Terroir Bordelais partage une passion commune pour l&#39;excellence culinaire et l&#39;accueil chaleureux. Notre chef et son équipe créent quotidiennement des plats sublimant les produits du terroir local, tandis que notre service en salle vous guide avec expertise dans la découverte de nos créations et accords mets-vins. N&#39;hésitez pas à nous faire part de vos préférences, allergies ou demandes particulières lors de votre réservation.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Nous Trouver</h2>
+      <p>Le Terroir Bordelais - 123 Rue Sainte-Catherine, 33000 Bordeaux. Idéalement situé dans le triangle d&#39;or bordelais, à deux pas des Grands Hommes et du Grand Théâtre. Accès tramway : lignes A et B, arrêt Hôtel de Ville (3 minutes à pied). Parkings publics : Victor Hugo et Grand Hommes. Pour vos livraisons ou questions spécifiques, contactez-nous à contact@terroirbordelais.fr ou au 05 56 XX XX XX.</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .content-section {
+    padding: 4rem 0;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary, #2563eb);
+  }
+
+  .content-section p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--color-text, #1f2937);
+    margin-bottom: 1rem;
+  }
+
+  .content-section:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+</style>

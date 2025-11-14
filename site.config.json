@@ -1,0 +1,45 @@
+{
+  "site_name": "Le Terroir Bordelais",
+  "site_tagline": "L'authenticité du terroir dans l'élégance bordelaise",
+  "pages": [
+    {
+      "title": "Accueil",
+      "slug": "accueil",
+      "description": "Découvrez Le Terroir Bordelais, restaurant gastronomique français à Bordeaux célébrant les saveurs authentiques du terroir et l'excellence des vins régionaux dans un cadre raffiné.",
+      "content_type": "home"
+    },
+    {
+      "title": "Notre Carte",
+      "slug": "carte",
+      "description": "Explorez notre carte gastronomique mettant à l'honneur les produits du terroir bordelais et aquitain, accompagnés d'une sélection exceptionnelle de vins régionaux soigneusement choisis par notre sommelier.",
+      "content_type": "services"
+    },
+    {
+      "title": "Contact & Réservations",
+      "slug": "contact",
+      "description": "Réservez votre table au Terroir Bordelais et contactez notre équipe pour une expérience gastronomique inoubliable au cœur de Bordeaux. Informations pratiques et formulaire de réservation.",
+      "content_type": "contact"
+    }
+  ],
+  "color_scheme": {
+    "primary": "#8B0000",
+    "secondary": "#D4AF37",
+    "accent": "#2F4F2F",
+    "background": "#FAF5F0",
+    "text": "#2C1810"
+  },
+  "navigation": [
+    {
+      "label": "Accueil",
+      "slug": "accueil"
+    },
+    {
+      "label": "Notre Carte",
+      "slug": "carte"
+    },
+    {
+      "label": "Contact",
+      "slug": "contact"
+    }
+  ]
+}
